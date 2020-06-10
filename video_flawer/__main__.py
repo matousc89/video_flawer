@@ -1,6 +1,6 @@
 import sys
 
-from video_flawer.flawer import run
+from video_flawer import run
 
 INPUT_PATH = sys.argv[1]
 try:
@@ -11,6 +11,6 @@ except:
 try:
     CONFIG_PATH = sys.argv[3]
 except:
-    CONFIG_PATH = False
+    CONFIG_PATH = None
 
-run(INPUT_PATH, OUTPUT_PATH, config_path=CONFIG)
+run(INPUT_PATH, OUTPUT_PATH, config_path=CONFIG_PATH)

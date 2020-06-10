@@ -13,17 +13,17 @@ from video_flawer.effects import gen_random_wave
 from video_flawer.effects import gen_sin_wave
 
 
-def run(INPUT_PATH, OUTPUT_PATH="out.avi", config_data=False, config_path=False):
+def run(INPUT_PATH, OUTPUT_PATH="out.avi", config_data=None, config_path=None):
 
     # get default config if the config is not provided
 
-    if not config_data and not config_path:
+    if config_data is None and config_path is None:
         config_dir = os.path.dirname(os.path.abspath(__file__))
         config_path = "{}/config.json".format(config_dir)
         with open(config_path) as json_file:
             config = json.load(json_file)
 
-    elif config_path:
+    elif not config_path is None:
         with open(config_path) as json_file:
             config = json.load(json_file)
 

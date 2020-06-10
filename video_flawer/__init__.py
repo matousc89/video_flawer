@@ -1,0 +1,1 @@
+from video_flawer.flawer import run as run
