@@ -9,8 +9,8 @@ except:
     OUTPUT_PATH = "out.avi"
 
 try:
-    CONFIG = sys.argv[3]
+    CONFIG_PATH = sys.argv[3]
 except:
-    CONFIG = False
+    CONFIG_PATH = False
 
-run(INPUT_PATH, OUTPUT_PATH, CONFIG)
+run(INPUT_PATH, OUTPUT_PATH, config_path=CONFIG)
