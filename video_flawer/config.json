@@ -1,0 +1,61 @@
+{
+    "crop": {
+        "w": 80,
+        "h": 20
+    },
+    "shift_sin_x": {
+        "max_shift": 3,
+        "frequency": 0.25
+    },
+    "shift_sin_y": {
+        "max_shift": 3,
+        "frequency": 0.1
+    },
+    "shift_random_x": {
+        "max_shift": 5,
+        "max_duration": 2,
+        "min_shift": 1,
+        "min_duration": 0.5
+    },
+    "shift_random_y": {
+        "max_shift": 5,
+        "max_duration": 2,
+        "min_shift": 1,
+        "min_duration": 0.5
+    },
+    "rotation_sin": {
+        "max_deg": 1,
+        "frequency": 0.1
+    },
+    "rotation_random": {
+        "max_deg": 2,
+        "max_duration": 1,
+        "min_deg": 1,
+        "min_duration": 0.3
+    },
+    "scale_sin": {
+        "max_percentage": 0.5,
+        "frequency": 0.1
+    },
+    "scale_random": {
+        "max_percentage": 1,
+        "max_duration": 5,
+        "min_percentage": 1,
+        "min_duration": 3
+    },
+    "af_blur": {
+        "blur_amount": 15,
+        "duration": 1,
+        "interval": 3
+    },
+    "white_noise": {
+        "noise_min": -50,
+        "noise_max": 50,
+        "appear_possibility": 0.1
+    },
+    "line_noise": {
+        "appear_possibility": 0.0005,
+        "min_line_length": 0.3,
+        "max_line_length": 1
+    }
+}
