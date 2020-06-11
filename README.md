@@ -10,11 +10,11 @@ Via pip:
 
 ## Usage as utility
 
-To flaw a video (with path `./test.mp4') with preset deffects call:
+To flaw a video (with path `./test.mp4`) with preset defects call:
 
 > python -m video_flawer test.mp4
 
-The output (for example `/data/out.avi') file can be setup as:
+The output (for example `/data/out.avi`) file can be setup as:
 
 > python -m video_flawer test.mp4 /data/out.avi
 
